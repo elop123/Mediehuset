@@ -1,0 +1,161 @@
+
+@use '../../helpers/variables' as *;
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+.logoImg{
+    width:25%;
+    height: 10%;
+    display: block;
+    //width: auto;
+    //height: 60px;
+}
+
+.navLinks{
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: $brushScript;
+ 
+}
+.navLinks li {
+    position: relative; 
+   
+  }
+.navLinks li a:hover{
+  color: red;
+  letter-spacing: 1px;
+}
+li{
+    
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+}
+.searchIcon {
+    font-size: 1.2rem;
+    color:  #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+/* Dropdown */
+.dropdown {
+    position: relative;
+  }
+  
+  .subMenu {
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0.5rem;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+  }
+  
+  .subMenu li {
+    padding: 0.5rem 1rem;
+  }
+  
+  .subMenu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    transition: color 0.3s;
+  }
+  
+  .subMenu li a:hover {
+    color: #e60000; 
+    background-color: #f9f9f9; 
+  }
+  
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .logoImg {
+    width: 30%; 
+  }
+  .date{
+  padding: 0.5rem;
+  }
+  .navLinks {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+  }
+
+  .searchIcon {
+    margin-top: 1rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logoImg {
+    width: 70%; 
+    max-width: 100px;
+  }
+
+  .navLinks {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: white; 
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 70px; 
+    left: 0;
+    z-index: 999;
+  }
+
+  .navLinks.active {
+    display: flex; 
+  }
+
+  .dropdown .subMenu {
+    position: relative;
+    top: auto;
+    left: auto;
+    min-width: 100%;
+  }
+
+  .searchIcon {
+    margin-top: 1rem;
+  }
+}
+
+
+

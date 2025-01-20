@@ -1,0 +1,26 @@
+
+
+$font-size-sm: 1rem;
+$font-size-m: 1.2rem;
+$font-size-lg: 2rem;
+
+
+
+@font-face {
+    font-family: 'Trebuchet MS';
+    src: url('../assets/fonts/trebuc.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'BrushScript';
+    src: url('../assets/fonts/BrushScriptOpti-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+ // Font variables
+$brushScript: "brush-script-std", sans-serif;
+$trebuchet: "Trebuchet MS", sans-serif;

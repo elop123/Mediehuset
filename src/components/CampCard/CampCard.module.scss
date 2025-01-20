@@ -1,0 +1,100 @@
+@use '../../helpers/variables' as *;
+
+.campCard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1.8rem;
+    padding: 2rem; 
+    width: 80%;
+    margin: auto;
+    font-family: $trebuchet;
+}
+  
+.campStyle {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+}
+  
+.content {
+    //padding: 1rem;
+    text-align: center;
+}
+  
+.name {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding:  1rem;
+    text-align: center;
+    margin-top: -1rem;
+}
+.name:nth-child(1){
+    background-color: rgb(157, 175, 218);
+}
+
+  
+.campStyle:nth-of-type(2) .name {
+    background-color: rgb(44, 225, 183); 
+    color: black;
+  }
+  
+  .campStyle:nth-of-type(3) .name {
+    background-color: rgb(255, 182, 193);
+    color: black;
+  }
+.numPeople{
+    text-align: center;
+    font-weight: bold;
+}
+.description{
+    padding: 1rem 2rem;
+    margin: auto;
+}
+.price{
+    margin: auto;
+}
+
+ .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+ } 
+.button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  .button:nth-child(2){
+    background-color: rgb(107, 119, 148);
+    &:hover{
+        background-color:rgb(157, 175, 218); 
+    }
+  }
+  
+  @media (max-width:768px){
+    .campCard {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        padding: 2rem; 
+        width: 80%;
+        margin: auto;
+        margin-bottom: 2rem;
+        font-family: $trebuchet;
+    }
+  }

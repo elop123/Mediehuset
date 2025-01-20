@@ -1,0 +1,50 @@
+@use '../../helpers/variables' as*;
+
+.newsDetails{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $trebuchet;
+}
+.newsImg{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.title{
+    margin: auto;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+.author{
+    font-size: 1.2rem;
+    color: #444;
+    padding: 0;
+    margin: 0;
+}
+.date{
+    font-size: 01rem;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+.teaser{
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:780px){
+    .newsDetails{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        .title{
+            text-align: center;
+        }
+}}

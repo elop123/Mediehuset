@@ -1,0 +1,41 @@
+@use '../../helpers/variables' as *;
+
+.campDetails {
+    width:80%;
+    margin: auto;
+    text-align: center;
+    font-family: $trebuchet;
+}
+.name{
+    padding: 0.5rem;
+    background-color: rgb(157, 175, 218);
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+}
+.colorit {
+    background-color: rgb(157, 175, 218);
+  }
+  
+  .kultunaut {
+    background-color: rgb(44, 225, 183);
+  }
+  
+  .deluxe {
+    background-color: rgb(255, 182, 193);
+  }
+.description{
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+}
+.campImg{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+@media(max-width:480px){
+  .description{
+    font-size: smaller;
+  }
+}

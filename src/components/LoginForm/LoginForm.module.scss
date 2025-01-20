@@ -1,0 +1,49 @@
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.loginContainer{
+    margin:auto;
+}
+.inputLine{
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+}
+.icon {
+    position: absolute;
+    color:white ;
+    background-color: #3b5998;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    
+  }
+  
+  .inputField {
+    flex: 1;
+    padding: 0.5rem 0.5rem 0.5rem 2.5rem; 
+    border:1px solid black;
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  
+  .inputField::placeholder {
+    color: #bbb;
+  }
+  .loginBtn{
+    padding: 20px 12px;
+    width: 120px;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    margin: auto;
+    margin-bottom: 5rem;
+    cursor: pointer;
+    &:hover{
+      background-color:#527ad1 ;
+    }
+  }

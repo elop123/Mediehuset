@@ -1,0 +1,9 @@
+@use '../../helpers/variables';
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: variables.$trebuchet;
+    color: #333;
+}

@@ -1,0 +1,65 @@
+@use '../../helpers/variables' as *;
+
+.mapSection{
+  font-family: $trebuchet;
+}
+.mapImage {
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: contain;
+  transform: scale(1); 
+  margin: 1rem auto; 
+}
+
+.title {
+  text-align: center;
+  font-family: $trebuchet;
+  font-size: 2rem; 
+  margin: 1rem auto; 
+  padding: 0; 
+}
+
+.directionSection {
+  text-align: center;
+  font-family: $trebuchet;
+  margin: 1rem auto; /* Remove excessive top/bottom spacing */
+  font-size: 1.2rem; /* Set a standard size */
+}
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .mapImage {
+    transform: scale(1); /* No scaling for tablets */
+    margin: 1rem auto; /* Maintain proper spacing */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Adjust size for tablets */
+    margin: 1rem auto; /* Keep consistent spacing */
+  }
+
+  .directionSection {
+    margin: 1rem auto; /* Adjust margins for better alignment */
+    font-size: 1rem;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .mapImage {
+    transform: scale(1); /* Avoid scaling for clarity */
+    margin: 1rem auto; /* Add consistent spacing */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Smaller font for mobile */
+    margin: 1rem auto; /* Remove extra spacing */
+    padding: 0; /* Avoid padding for compact design */
+  }
+
+  .directionSection {
+    margin: 1rem auto; /* Reduce excessive margins */
+    font-size: 0.9rem; /* Smaller text size for mobile */
+  }
+}

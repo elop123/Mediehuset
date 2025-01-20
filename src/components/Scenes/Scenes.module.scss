@@ -1,0 +1,97 @@
+@use '../../helpers/variables' as*;
+  
+.stage {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: $trebuchet;
+    
+}
+  
+.stage li {
+  font-weight: 100;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+  
+
+.stagesNav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #333; 
+    //padding: 1rem; 
+    width: 80%;
+    margin: auto;
+  }
+  
+  .stage {
+    color: white;
+    font-size: 1rem; 
+    font-weight: bold;
+    //padding: 1rem 0.5rem; 
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .stage:nth-child(1):hover {
+    background-color: grey; 
+    color: black;
+  }
+  
+  .stage:nth-child(2):hover {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  
+  .stage:nth-child(3):hover {
+    background-color: #4285F4; 
+    color: white;
+  }
+  
+  .stage:nth-child(4):hover {
+    background-color: #34A853; 
+    color: white;
+  }
+  
+  .stage:nth-child(5):hover {
+    background-color: #B33FBB;
+    color: white;
+  }
+  
+
+  @media (max-width: 780px) { 
+    .stagesNav {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .stage li {
+      font-size: 1.25rem;
+      padding: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) { 
+    .stagesNav {
+      width: 100%;
+    }
+  
+    .stage li {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .stage {
+      font-size: 0.9rem;
+    }
+  }

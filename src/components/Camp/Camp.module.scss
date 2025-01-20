@@ -1,0 +1,8 @@
+@use '../../helpers/variables' as * ;
+
+.text{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    font-family: $trebuchet;
+}
