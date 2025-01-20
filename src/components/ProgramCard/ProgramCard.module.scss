@@ -1,0 +1,83 @@
+@use '../../helpers/variables' as *;
+
+.programContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+  font-family: $trebuchet; 
+  padding: -1rem;
+  margin-bottom: 1rem;
+}
+
+.stageCard {
+  padding: 0;
+  background-color: #f9f9f9;
+  overflow: hidden; 
+}
+
+
+.stageTitle {
+  background-color: #e74c3c; 
+  color: white;
+  padding: 12px ;
+  margin-bottom: -0.05rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+ 
+}
+.redStage .stageTitle {
+    background-color: #e74c3c; 
+  }
+  
+  .blueStage .stageTitle {
+    background-color: #3498db; 
+  }
+  
+  .greenStage .stageTitle {
+    background-color: #27ae60; 
+  }
+  .violetStage .stageTitle{
+    background-color:#B33FBB;
+  }
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(235, 234, 234);
+  padding: 0;
+}
+
+.eventItem {
+ // padding: 12px 20px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc; 
+
+  &:last-child {
+    border-bottom: none; 
+  }
+
+  &:hover {
+    background-color: rgb(194, 194, 194); 
+  }
+}
+
+.eventTime {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 1rem; 
+}
+
+.eventTitle {
+  flex: 1;
+  margin-left: 1rem; 
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+

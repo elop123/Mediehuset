@@ -1,0 +1,44 @@
+@use '../../helpers/variables' as *;
+
+.dayFilter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    background-color: #333;
+    width: 80%;
+   
+   
+  }
+  
+ .dayFilter button {
+    flex-grow: 1;
+    padding: 16px 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+  
+    &:hover {
+      background-color: darkgoldenrod;
+    }
+  
+    &.active {
+      background-color: rgb(235, 180, 40); 
+      color: white;
+    }
+  }
+
+  @media (max-width: 780px) { 
+    .dayFilter {
+      flex-direction: column;
+      width: 90%;
+      padding: 14px 16px;
+    }
+}

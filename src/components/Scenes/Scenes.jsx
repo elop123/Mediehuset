@@ -13,7 +13,7 @@ export const Scenes = () => {
   return (
   <nav className={style.stagesNav}>
   <ul className={style.stage}>
-    <li>A-Å</li> 
+    <li >A-Å</li> 
   </ul>
   {data &&
     data.items.map((stage) => (
