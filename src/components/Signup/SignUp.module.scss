@@ -96,58 +96,7 @@
     height: 12%;
   }
 
-  // @media (max-width: 768px) {
-  //   .inputContainer {
-  //     flex-direction: row;
-  //     justify-content: center;
-  //     padding: 1rem;
-  //     margin: auto;
-  //   }
   
-  //   .iconWrapper {
-  //     width: 5%;
-  //     padding: 0.55rem;
-  //     margin-bottom: 1rem;
-  //   }
-  
-  //   .input {
-  //     width: 40%;
-  //     margin-bottom: 1rem; 
-  //     font-size: 0.9rem;
-  //   }
-  
-  //   .btn {
-  //     width: 30%;
-  //     padding: 0.96rem;
-      
-  //   }
-  
-  //   .footerImg {
-  //     width: 20%; 
-  //   }
-  // }
-  
-
-  // @media (max-width: 480px) {
-  //   .textContainer {
-  //     margin-bottom: 1rem;
-  //     padding: 0 1rem;
-  //   }
-  
-  //   .title {
-  //     font-size: 1.5rem; 
-  //   }
-  
-  //   .text {
-  //     font-size: 0.8rem; 
-  //   }
-    
-  //   .footerImg {
-  //     width: 30%;
-  //   }
-  // }
-
- /* For Tablets (Max Width: 768px) */
 @media (max-width: 768px) {
   .inputContainer {
     flex-direction: row; 
@@ -180,7 +129,7 @@
   }
 }
 
-/* For Mobile Devices (Max Width: 480px) */
+
 @media (max-width: 480px) {
   .textContainer {
     margin-bottom: 1rem;
@@ -188,11 +137,11 @@
   }
 
   .title {
-    font-size: 1.5rem; /* Reduce title font size */
+    font-size: 1.5rem; 
   }
 
   .text {
-    font-size: 0.8rem; /* Reduce text font size */
+    font-size: 0.8rem; 
   }
 
   .inputContainer {
@@ -208,17 +157,17 @@
   }
 
   .input {
-    width: 100%; /* Full width inputs for mobile */
+    width: 100%; 
     font-size: 0.85rem;
   }
 
   .btn {
-    width: 100%; /* Full width button */
+    width: 100%; 
     padding: 0.7rem;
     font-size: 0.9rem;
   }
 
   .footerImg {
-    width: 30%; /* Adjust footer image size */
+    width: 30%; 
   }
 }

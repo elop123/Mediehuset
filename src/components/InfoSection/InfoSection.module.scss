@@ -23,43 +23,41 @@
 .directionSection {
   text-align: center;
   font-family: $trebuchet;
-  margin: 1rem auto; /* Remove excessive top/bottom spacing */
-  font-size: 1.2rem; /* Set a standard size */
+  margin: 1rem auto; 
+  font-size: 1.2rem; 
 }
 
-/* Tablet View (max-width: 768px) */
 @media (max-width: 768px) {
   .mapImage {
-    transform: scale(1); /* No scaling for tablets */
-    margin: 1rem auto; /* Maintain proper spacing */
+    transform: scale(1); 
+    margin: 1rem auto;
   }
 
   .title {
-    font-size: 1.5rem; /* Adjust size for tablets */
-    margin: 1rem auto; /* Keep consistent spacing */
+    font-size: 1.5rem; 
+    margin: 1rem auto; 
   }
 
   .directionSection {
-    margin: 1rem auto; /* Adjust margins for better alignment */
+    margin: 1rem auto; 
     font-size: 1rem;
   }
 }
 
-/* Mobile View (max-width: 480px) */
 @media (max-width: 480px) {
   .mapImage {
-    transform: scale(1); /* Avoid scaling for clarity */
-    margin: 1rem auto; /* Add consistent spacing */
+    transform: scale(1);
+    margin: 1rem auto; 
   }
 
   .title {
-    font-size: 1.2rem; /* Smaller font for mobile */
-    margin: 1rem auto; /* Remove extra spacing */
-    padding: 0; /* Avoid padding for compact design */
+    font-size: 1.2rem; 
+    margin: 1rem auto; 
+    padding: 0; 
   }
 
   .directionSection {
-    margin: 1rem auto; /* Reduce excessive margins */
-    font-size: 0.9rem; /* Smaller text size for mobile */
+    margin: 1rem auto; 
+    font-size: 0.9rem; 
   }
 }
